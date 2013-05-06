@@ -4,6 +4,9 @@
 <head>
 	<title>Oregon Lobbyists</title>
 	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
 	<!-- DataTables CSS -->
 	<link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css">
  
@@ -12,12 +15,60 @@
  
 	<!-- DataTables -->
 	<script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
-
 </head>
 
-<body>
+<body class="wrapper">
 
-<h1>Oregon Lobbyists</h1>
+<div id="title-details">
+	<h1 class="center">Oregon Lobbyists</h1>
+	<h2 class="center">Find out who's hired lobbyists to represent them in Oregon and who their lobbyists are.</h2>
+	<p class="center">Data from the <a href="http://www.oregon.gov/OGEC/Pages/forms_publications.aspx">Oregon Government Ethics Commission</a>, March 2013 list.
+</div>
+
+<hr>
+
+<div class="search-container">
+
+	<div id="custom-search1" class="span6 left">
+		<p>Get more information on a company's political donations, preferred candidates, and policy positions by searching <a href="http://www.opensecrets.org/">OpenSecrets.org</a>...</p>
+			<script>
+			  (function() {
+			    var cx = '014827242009395991079:romqmvocxgu';
+			    var gcse = document.createElement('script');
+			    gcse.type = 'text/javascript';
+			    gcse.async = true;
+			    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+			        '//www.google.com/cse/cse.js?cx=' + cx;
+			    var s = document.getElementsByTagName('script')[0];
+			    s.parentNode.insertBefore(gcse, s);
+			  })();
+			</script>
+			<gcse:search></gcse:search>
+	</div>
+
+	<div id="custom-search2" class="span6 left searchalign">
+		<p>...or search at <a href="www.influenceexplorer.com">Influence Explorer</a> for more details.</p>
+			<script>
+			  (function() {
+			    var cx = '014827242009395991079:88l72hog6eq';
+			    var gcse = document.createElement('script');
+			    gcse.type = 'text/javascript';
+			    gcse.async = true;
+			    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+			        '//www.google.com/cse/cse.js?cx=' + cx;
+			    var s = document.getElementsByTagName('script')[0];
+			    s.parentNode.insertBefore(gcse, s);
+			  })();
+			</script>
+			<gcse:search></gcse:search>
+	</div>
+
+</div>
+
+<br></br>
+<br></br>
+<br></br>
+<hr>
 
 <table id="lobbyists">
 	<thead>
